@@ -1,0 +1,36 @@
+names = [ "seenu", "sai", "jai", "vamsi"]
+
+ages = [10,2,20,40,50,60]
+
+print(names)
+print(len(ages)) # 6 length of list
+
+names.append("prakash")
+print(names) #['seenu', 'sai', 'jai', 'vamsi', 'prakash']
+
+names.insert(2, "vasu")
+
+print(names) #['seenu', 'sai', 'vasu', 'jai', 'vamsi', 'ram']
+
+names.reverse()
+
+print(names) #['ram', 'vamsi', 'jai', 'vasu', 'sai', 'seenu']
+
+ages.sort()
+
+print(ages) # [2, 10, 20, 40, 50, 60]
+
+
+for i in ages:
+    if i > 40 : print("your adult")
+    else : print("your youg")
+
+
+slice_age = ages[1:3]
+print(slice_age) #10, 20,
+print(ages)# [2, 10, 20, 40, 50, 60]
+
+
+print(20 in ages) #true
+print(70 in ages) #flase
+print(30 not in ages) #true
